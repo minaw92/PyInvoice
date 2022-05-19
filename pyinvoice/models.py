@@ -103,7 +103,7 @@ class Item(object):
     """
     Product/Item information
     """
-    def __init__(self, name, units, unit_price):
+    def __init__(self, name, description, units, unit_price):
         """
         Item modal init
         :param name: Item name
@@ -117,7 +117,7 @@ class Item(object):
         :return:
         """
         self.name = name
-        #self.description = description
+        self.description = description
         self.units = units
         self.unit_price = unit_price
 
